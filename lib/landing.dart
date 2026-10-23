@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'api_config.dart';
@@ -503,19 +502,19 @@ class _LandingPageState extends State<LandingPage>
   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
   children: [
     _buildSocialItem(
-      icon: FontAwesomeIcons.telegram,
+      icon: Icons.telegram,
       bgColor: Color(0xFF29B6F6),
       label: 'Telegram',
       onTap: () => _openUrl('https://t.me/vinxd2'),
     ),
     _buildSocialItem(
-      icon: FontAwesomeIcons.tiktok,
+      icon: Icons.tiktok,
       bgColor: Color(0xFF6B7280),
       label: 'TikTok',
       onTap: () => _openUrl('https://tiktok.com/@username9863933'),
     ),
     _buildSocialItem(
-      icon: FontAwesomeIcons.instagram,
+      icon: Icons.instagram,
       bgColor: Color(0xFFE1306C),
       label: 'Instagram',
       onTap: () => _openUrl('https://instagram.com/cihuy8273'),
@@ -554,7 +553,7 @@ class _LandingPageState extends State<LandingPage>
             ],
           ),
           child: Center(
-            child: FaIcon(icon, color: bgColor, size: 26),
+            child: Icon(icon, color: bgColor, size: 26),
           ),
         ),
         const SizedBox(height: 10),

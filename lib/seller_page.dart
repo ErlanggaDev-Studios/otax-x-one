@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'api_config.dart';
 
 class SellerPage extends StatefulWidget {
@@ -375,22 +374,22 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "CREATE MEMBER",
-                  icon: FontAwesomeIcons.userPlus,
+                  icon: Icons.userPlus,
                   children: [
                     _buildInput(
                       label: "Username Baru",
                       controller: createUsernameController,
-                      icon: FontAwesomeIcons.user,
+                      icon: Icons.user,
                     ),
                     _buildInput(
                       label: "Password",
                       controller: createPasswordController,
-                      icon: FontAwesomeIcons.lock,
+                      icon: Icons.lock,
                     ),
                     _buildInput(
                       label: "Durasi (Hari)",
                       controller: createDayController,
-                      icon: FontAwesomeIcons.calendarDay,
+                      icon: Icons.calendarDay,
                       type: TextInputType.number,
                       hint: "Maksimal 30 hari",
                     ),
@@ -421,18 +420,18 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "EXTEND DURATION",
-                  icon: FontAwesomeIcons.clock,
+                  icon: Icons.clock,
                   children: [
                     _buildInput(
                       label: "Username Target",
                       controller: editUsernameController,
-                      icon: FontAwesomeIcons.userEdit,
+                      icon: Icons.userEdit,
                       hint: "Username member yang ingin diperpanjang",
                     ),
                     _buildInput(
                       label: "Tambah Hari",
                       controller: editDayController,
-                      icon: FontAwesomeIcons.calendarPlus,
+                      icon: Icons.calendarPlus,
                       type: TextInputType.number,
                       hint: "Maksimal 30 hari",
                     ),
@@ -463,7 +462,7 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "MEMBER LIST",
-                  icon: FontAwesomeIcons.users,
+                  icon: Icons.users,
                   children: [
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),

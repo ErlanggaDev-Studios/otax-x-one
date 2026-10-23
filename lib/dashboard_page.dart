@@ -9,7 +9,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:web_socket_channel/status.dart' as status;
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:video_player/video_player.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:geolocator/geolocator.dart';
@@ -1077,8 +1076,8 @@ class _DashboardPageState extends State<DashboardPage>
   Widget _buildQuickActionsSection() {
     final actions = [
       _QuickActionData(
-        icon: FontAwesomeIcons.whatsapp,
-        bgIcon: FontAwesomeIcons.whatsapp,
+        icon: Icons.whatsapp,
+        bgIcon: Icons.whatsapp,
         title: 'Manage Sender',
         subtitle: 'Manage your active sender',
         gradient: [const Color(0xFFE91E8C), const Color(0xFFAD1457)],
@@ -1093,24 +1092,24 @@ class _DashboardPageState extends State<DashboardPage>
         }),
       ),
       _QuickActionData(
-        icon: FontAwesomeIcons.telegram,
-        bgIcon: FontAwesomeIcons.telegram,
+        icon: Icons.telegram,
+        bgIcon: Icons.telegram,
         title: 'Join Channel',
         subtitle: 'ATOMIC-X Info Channel',
         gradient: [const Color(0xFF00B4D8), const Color(0xFF0077B6)],
         onTap: () => _openUrl('https://t.me/vinxd2'),
       ),
       _QuickActionData(
-        icon: FontAwesomeIcons.bookQuran,
-        bgIcon: FontAwesomeIcons.bookQuran,
+        icon: Icons.bookQuran,
+        bgIcon: Icons.bookQuran,
         title: 'Al Quran',
         subtitle: 'Baca Al-Quran',
         gradient: [const Color(0xFF7C4DFF), const Color(0xFF4A148C)],
         onTap: () => Navigator.push(context, _slideRoute(AlQuranPage())),
       ),
       _QuickActionData(
-        icon: FontAwesomeIcons.tv,
-        bgIcon: FontAwesomeIcons.tv,
+        icon: Icons.tv,
+        bgIcon: Icons.tv,
         title: 'Anime',
         subtitle: 'Discover & Watch Anime',
         gradient: [const Color(0xFFFF6D00), const Color(0xFFE65100)],
@@ -1899,7 +1898,7 @@ class _DashboardPageState extends State<DashboardPage>
           child: ClipOval(
             child: _profileImage != null
                 ? Image.file(_profileImage!, fit: BoxFit.cover)
-                : const Icon(FontAwesomeIcons.userAstronaut, color: Colors.redAccent, size: 20),
+                : const Icon(Icons.userAstronaut, color: Colors.redAccent, size: 20),
           ),
         ),
       ),
@@ -1920,7 +1919,7 @@ class _DashboardPageState extends State<DashboardPage>
   Widget _buildBottomNav() {
     final items = [
       _NavItem(icon: Icons.home_rounded, label: 'Home'),
-      _NavItem(icon: FontAwesomeIcons.whatsapp, label: 'Bug'),
+      _NavItem(icon: Icons.whatsapp, label: 'Bug'),
       _NavItem(icon: Icons.info_outline_rounded, label: 'Info'),
       _NavItem(icon: Icons.build_circle_outlined, label: 'Tools'),
     ];
@@ -2021,7 +2020,7 @@ class _DashboardPageState extends State<DashboardPage>
                           child: ClipOval(
                             child: _profileImage != null
                                 ? Image.file(_profileImage!, fit: BoxFit.cover)
-                                : const Icon(FontAwesomeIcons.userAstronaut, size: 38, color: kWhite),
+                                : const Icon(Icons.userAstronaut, size: 38, color: kWhite),
                           ),
                         ),
                         const SizedBox(height: 12),

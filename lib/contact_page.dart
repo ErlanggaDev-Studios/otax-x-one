@@ -1,6 +1,5 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // ─── Palette (konsisten dengan halaman lain) ──────────────────────────────────
@@ -43,7 +42,7 @@ const _contacts = [
   _Contact(
     label:    'Telegram',
     handle:   '@Rexyz397',
-    icon:     FontAwesomeIcons.telegram,
+    icon:     Icons.telegram,
     color:    Color(0xFF39A7E0),
     colorDim: Color(0xFF1A4D6E),
     url:      'https://t.me/Rexyz397',
@@ -51,7 +50,7 @@ const _contacts = [
   _Contact(
     label:    'WhatsApp',
     handle:   '+62 823-1911-8824',
-    icon:     FontAwesomeIcons.whatsapp,
+    icon:     Icons.whatsapp,
     color:    Color(0xFF25D366),
     colorDim: Color(0xFF0D4A27),
     url:      'https://wa.me/6282319118824',
@@ -59,7 +58,7 @@ const _contacts = [
   _Contact(
     label:    'TikTok',
     handle:   '@username9863933',
-    icon:     FontAwesomeIcons.tiktok,
+    icon:     Icons.tiktok,
     color:    Color(0xFFEE1D52),
     colorDim: Color(0xFF4A0D1F),
     url:      'https://www.tiktok.com/@username9863933',
@@ -67,7 +66,7 @@ const _contacts = [
   _Contact(
     label:    'Instagram',
     handle:   '@cihuy8273',
-    icon:     FontAwesomeIcons.instagram,
+    icon:     Icons.instagram,
     color:    Color(0xFFE1306C),
     colorDim: Color(0xFF4A1030),
     url:      'https://www.instagram.com/darkness_reals?igsh=MWM2MDl5NXg0bTJpNg==',
@@ -447,7 +446,7 @@ class _ContactCardState extends State<_ContactCard>
                   ),
                 ),
                 child: Center(
-                  child: FaIcon(c.icon, color: c.color, size: 22),
+                  child: Icon(c.icon, color: c.color, size: 22),
                 ),
               ),
 

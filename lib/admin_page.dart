@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:math' as math;
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'api_config.dart';
 
 class AdminPage extends StatefulWidget {
@@ -782,13 +781,13 @@ class _AdminPageState extends State<AdminPage>
                       _buildSection(
                         title: 'Hapus User',
                         subtitle: 'Nonaktifkan akun dari sistem',
-                        icon: FontAwesomeIcons.userSlash,
+                        icon: Icons.userSlash,
                         accentColor: Colors.redAccent,
                         children: [
                           _buildInput(
                             label: 'Username Target',
                             controller: deleteController,
-                            icon: FontAwesomeIcons.user,
+                            icon: Icons.user,
                           ),
                           const SizedBox(height: 4),
                           _buildButton(
@@ -806,23 +805,23 @@ class _AdminPageState extends State<AdminPage>
                       _buildSection(
                         title: 'Buat Akun Baru',
                         subtitle: 'Tambah pengguna ke sistem',
-                        icon: FontAwesomeIcons.userPlus,
+                        icon: Icons.userPlus,
                         children: [
                           _buildInput(
                             label: 'Username',
                             controller: createUsernameController,
-                            icon: FontAwesomeIcons.user,
+                            icon: Icons.user,
                           ),
                           _buildInput(
                             label: 'Password',
                             controller: createPasswordController,
-                            icon: FontAwesomeIcons.lock,
+                            icon: Icons.lock,
                             obscure: true,
                           ),
                           _buildInput(
                             label: 'Durasi (Hari)',
                             controller: createDayController,
-                            icon: FontAwesomeIcons.calendarDay,
+                            icon: Icons.calendarDay,
                             type: TextInputType.number,
                           ),
                           _buildDropdown(
@@ -848,7 +847,7 @@ class _AdminPageState extends State<AdminPage>
                         title: 'User Management',
                         subtitle:
                             '${filteredList.length} pengguna ditemukan',
-                        icon: FontAwesomeIcons.users,
+                        icon: Icons.users,
                         children: [
                           _buildDropdown(
                             value: selectedRole,

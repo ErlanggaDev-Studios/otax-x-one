@@ -3,7 +3,6 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'api_config.dart';
 
 // ─── Palette ──────────────────────────────────────────────────────────────────
@@ -698,7 +697,7 @@ class _SenderCardState extends State<_SenderCard>
                         child: Stack(
                           children: [
                             const Center(
-                              child: Icon(FontAwesomeIcons.whatsapp,
+                              child: Icon(Icons.whatsapp,
                                   color: _C.blueLight, size: 24),
                             ),
                             // Online dot
@@ -1249,7 +1248,7 @@ class _EmptyStateState extends State<_EmptyState>
                         color: _C.blue.withOpacity(0.2), blurRadius: 30),
                   ],
                 ),
-                child: const Icon(FontAwesomeIcons.whatsapp,
+                child: const Icon(Icons.whatsapp,
                     color: _C.blueLight, size: 38),
               ),
             ),

@@ -50,7 +50,7 @@ const _contacts = [
   _Contact(
     label:    'WhatsApp',
     handle:   '+62 823-1911-8824',
-    icon:     Icons.whatsapp,
+    icon:     Icons.chat,
     color:    Color(0xFF25D366),
     colorDim: Color(0xFF0D4A27),
     url:      'https://wa.me/6282319118824',
@@ -66,7 +66,7 @@ const _contacts = [
   _Contact(
     label:    'Instagram',
     handle:   '@cihuy8273',
-    icon:     Icons.instagram,
+    icon:     Icons.camera_alt,
     color:    Color(0xFFE1306C),
     colorDim: Color(0xFF4A1030),
     url:      'https://www.instagram.com/darkness_reals?igsh=MWM2MDl5NXg0bTJpNg==',

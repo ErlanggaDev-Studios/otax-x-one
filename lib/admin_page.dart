@@ -781,13 +781,13 @@ class _AdminPageState extends State<AdminPage>
                       _buildSection(
                         title: 'Hapus User',
                         subtitle: 'Nonaktifkan akun dari sistem',
-                        icon: Icons.userSlash,
+                        icon: Icons.person_off,
                         accentColor: Colors.redAccent,
                         children: [
                           _buildInput(
                             label: 'Username Target',
                             controller: deleteController,
-                            icon: Icons.user,
+                            icon: Icons.person,
                           ),
                           const SizedBox(height: 4),
                           _buildButton(
@@ -805,12 +805,12 @@ class _AdminPageState extends State<AdminPage>
                       _buildSection(
                         title: 'Buat Akun Baru',
                         subtitle: 'Tambah pengguna ke sistem',
-                        icon: Icons.userPlus,
+                        icon: Icons.personPlus,
                         children: [
                           _buildInput(
                             label: 'Username',
                             controller: createUsernameController,
-                            icon: Icons.user,
+                            icon: Icons.person,
                           ),
                           _buildInput(
                             label: 'Password',
@@ -821,7 +821,7 @@ class _AdminPageState extends State<AdminPage>
                           _buildInput(
                             label: 'Durasi (Hari)',
                             controller: createDayController,
-                            icon: Icons.calendarDay,
+                            icon: Icons.calendar_today,
                             type: TextInputType.number,
                           ),
                           _buildDropdown(
@@ -847,7 +847,7 @@ class _AdminPageState extends State<AdminPage>
                         title: 'User Management',
                         subtitle:
                             '${filteredList.length} pengguna ditemukan',
-                        icon: Icons.users,
+                        icon: Icons.people,
                         children: [
                           _buildDropdown(
                             value: selectedRole,

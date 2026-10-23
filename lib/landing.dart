@@ -514,7 +514,7 @@ class _LandingPageState extends State<LandingPage>
       onTap: () => _openUrl('https://tiktok.com/@username9863933'),
     ),
     _buildSocialItem(
-      icon: Icons.instagram,
+      icon: Icons.camera_alt,
       bgColor: Color(0xFFE1306C),
       label: 'Instagram',
       onTap: () => _openUrl('https://instagram.com/cihuy8273'),

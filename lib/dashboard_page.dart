@@ -1076,8 +1076,8 @@ class _DashboardPageState extends State<DashboardPage>
   Widget _buildQuickActionsSection() {
     final actions = [
       _QuickActionData(
-        icon: Icons.whatsapp,
-        bgIcon: Icons.whatsapp,
+        icon: Icons.chat,
+        bgIcon: Icons.chat,
         title: 'Manage Sender',
         subtitle: 'Manage your active sender',
         gradient: [const Color(0xFFE91E8C), const Color(0xFFAD1457)],
@@ -1898,7 +1898,7 @@ class _DashboardPageState extends State<DashboardPage>
           child: ClipOval(
             child: _profileImage != null
                 ? Image.file(_profileImage!, fit: BoxFit.cover)
-                : const Icon(Icons.userAstronaut, color: Colors.redAccent, size: 20),
+                : const Icon(Icons.personAstronaut, color: Colors.redAccent, size: 20),
           ),
         ),
       ),
@@ -1919,7 +1919,7 @@ class _DashboardPageState extends State<DashboardPage>
   Widget _buildBottomNav() {
     final items = [
       _NavItem(icon: Icons.home_rounded, label: 'Home'),
-      _NavItem(icon: Icons.whatsapp, label: 'Bug'),
+      _NavItem(icon: Icons.chat, label: 'Bug'),
       _NavItem(icon: Icons.info_outline_rounded, label: 'Info'),
       _NavItem(icon: Icons.build_circle_outlined, label: 'Tools'),
     ];
@@ -2020,7 +2020,7 @@ class _DashboardPageState extends State<DashboardPage>
                           child: ClipOval(
                             child: _profileImage != null
                                 ? Image.file(_profileImage!, fit: BoxFit.cover)
-                                : const Icon(Icons.userAstronaut, size: 38, color: kWhite),
+                                : const Icon(Icons.personAstronaut, size: 38, color: kWhite),
                           ),
                         ),
                         const SizedBox(height: 12),

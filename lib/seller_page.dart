@@ -374,12 +374,12 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "CREATE MEMBER",
-                  icon: Icons.userPlus,
+                  icon: Icons.personPlus,
                   children: [
                     _buildInput(
                       label: "Username Baru",
                       controller: createUsernameController,
-                      icon: Icons.user,
+                      icon: Icons.person,
                     ),
                     _buildInput(
                       label: "Password",
@@ -389,7 +389,7 @@ class _SellerPageState extends State<SellerPage> {
                     _buildInput(
                       label: "Durasi (Hari)",
                       controller: createDayController,
-                      icon: Icons.calendarDay,
+                      icon: Icons.calendar_today,
                       type: TextInputType.number,
                       hint: "Maksimal 30 hari",
                     ),
@@ -420,18 +420,18 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "EXTEND DURATION",
-                  icon: Icons.clock,
+                  icon: Icons.access_time,
                   children: [
                     _buildInput(
                       label: "Username Target",
                       controller: editUsernameController,
-                      icon: Icons.userEdit,
+                      icon: Icons.personEdit,
                       hint: "Username member yang ingin diperpanjang",
                     ),
                     _buildInput(
                       label: "Tambah Hari",
                       controller: editDayController,
-                      icon: Icons.calendarPlus,
+                      icon: Icons.calendar_month,
                       type: TextInputType.number,
                       hint: "Maksimal 30 hari",
                     ),
@@ -462,7 +462,7 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "MEMBER LIST",
-                  icon: Icons.users,
+                  icon: Icons.people,
                   children: [
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),

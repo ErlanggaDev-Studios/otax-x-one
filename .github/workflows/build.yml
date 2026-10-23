@@ -17,10 +17,10 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Setup Flutter
+      - name: Setup Flutter Stabil Aman
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          flutter-version: '3.22.0'
 
       - name: Get Dependencies
         run: flutter pub get
@@ -33,4 +33,3 @@ jobs:
         with:
           name: Aplikasi-Release-APK
           path: build/app/outputs/flutter-apk/app-release.apk
-

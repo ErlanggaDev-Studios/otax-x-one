@@ -17,10 +17,10 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Setup Flutter Stabil Aman
+      - name: Setup Flutter Versi Terbaru
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.0'
+          channel: 'stable' # Ini akan otomatis memakai versi terbaru 3.47.7 yang diminta SDK
 
       - name: Get Dependencies
         run: flutter pub get
@@ -33,3 +33,4 @@ jobs:
         with:
           name: Aplikasi-Release-APK
           path: build/app/outputs/flutter-apk/app-release.apk
+

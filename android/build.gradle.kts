@@ -20,11 +20,11 @@ tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
 
-// compileSdk app tidak diwarisi plugin. Paksa semua subproject ke 36,
-// supaya dependency androidx baru tidak menolak compileSdk lama milik plugin.
+
+// compileSdk app tidak diwarisi plugin. Paksa semua library plugin ke 36.
 subprojects {
-    afterEvaluate {
-        val android = extensions.findByName("android") ?: return@afterEvaluate
+    pluginManager.withPlugin("com.android.library") {
+        val android = extensions.findByName("android") ?: return@withPlugin
         android.javaClass.methods
             .firstOrNull {
                 it.name == "setCompileSdkVersion" &&

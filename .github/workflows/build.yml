@@ -20,7 +20,8 @@ jobs:
       - name: Setup Flutter Versi Terbaru
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable' # Ini akan otomatis memakai versi terbaru 3.47.7 yang diminta SDK
+          flutter-version: '3.47.7'
+          channel: stable
 
       - name: Get Dependencies
         run: flutter pub get

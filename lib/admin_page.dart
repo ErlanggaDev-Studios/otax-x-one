@@ -805,7 +805,7 @@ class _AdminPageState extends State<AdminPage>
                       _buildSection(
                         title: 'Buat Akun Baru',
                         subtitle: 'Tambah pengguna ke sistem',
-                        icon: Icons.personPlus,
+                        icon: Icons.person_add,
                         children: [
                           _buildInput(
                             label: 'Username',

@@ -1100,8 +1100,8 @@ class _DashboardPageState extends State<DashboardPage>
         onTap: () => _openUrl('https://t.me/vinxd2'),
       ),
       _QuickActionData(
-        icon: Icons.bookQuran,
-        bgIcon: Icons.bookQuran,
+        icon: Icons.menu_book,
+        bgIcon: Icons.menu_book,
         title: 'Al Quran',
         subtitle: 'Baca Al-Quran',
         gradient: [const Color(0xFF7C4DFF), const Color(0xFF4A148C)],
@@ -1898,7 +1898,7 @@ class _DashboardPageState extends State<DashboardPage>
           child: ClipOval(
             child: _profileImage != null
                 ? Image.file(_profileImage!, fit: BoxFit.cover)
-                : const Icon(Icons.personAstronaut, color: Colors.redAccent, size: 20),
+                : const Icon(Icons.rocket_launch, color: Colors.redAccent, size: 20),
           ),
         ),
       ),
@@ -2020,7 +2020,7 @@ class _DashboardPageState extends State<DashboardPage>
                           child: ClipOval(
                             child: _profileImage != null
                                 ? Image.file(_profileImage!, fit: BoxFit.cover)
-                                : const Icon(Icons.personAstronaut, size: 38, color: kWhite),
+                                : const Icon(Icons.rocket_launch, size: 38, color: kWhite),
                           ),
                         ),
                         const SizedBox(height: 12),

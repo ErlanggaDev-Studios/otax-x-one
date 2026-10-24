@@ -374,7 +374,7 @@ class _SellerPageState extends State<SellerPage> {
 
                 _buildGlassCard(
                   title: "CREATE MEMBER",
-                  icon: Icons.personPlus,
+                  icon: Icons.person_add,
                   children: [
                     _buildInput(
                       label: "Username Baru",
@@ -425,7 +425,7 @@ class _SellerPageState extends State<SellerPage> {
                     _buildInput(
                       label: "Username Target",
                       controller: editUsernameController,
-                      icon: Icons.personEdit,
+                      icon: Icons.manage_accounts,
                       hint: "Username member yang ingin diperpanjang",
                     ),
                     _buildInput(

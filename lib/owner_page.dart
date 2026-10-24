@@ -509,7 +509,7 @@ class _OwnerPageState extends State<OwnerPage> {
 
                 _buildGlassCard(
                   title: "CREATE ACCOUNT",
-                  icon: Icons.personPlus,
+                  icon: Icons.person_add,
                   children: [
                     _buildInput(
                       label: "Username",
@@ -602,7 +602,7 @@ class _OwnerPageState extends State<OwnerPage> {
                     _buildInput(
                       label: "Username Target",
                       controller: editUsernameController,
-                      icon: Icons.personEdit,
+                      icon: Icons.manage_accounts,
                     ),
                     _buildInput(
                       label: "Tambah Hari",

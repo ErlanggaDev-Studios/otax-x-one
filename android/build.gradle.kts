@@ -1,4 +1,3 @@
-plugins { id("com.android.library") version "8.13.0" apply false }
 
 allprojects {
     repositories {
@@ -25,9 +24,15 @@ tasks.register<Delete>("clean") {
 
 
 
-// compileSdk app tidak diwarisi plugin; paksa DSL baru di setiap library plugin.
+
+// compileSdk app tidak diwarisi plugin; AGP membaca DSL baru (setCompileSdk), bukan setCompileSdkVersion.
 subprojects {
     plugins.withId("com.android.library") {
-        project.extensions.configure<com.android.build.api.dsl.LibraryExtension>("android") { compileSdk = 36 }
+        val a = project.extensions.findByName("android") ?: return@withId
+        val applied = a.javaClass.methods.any {
+            it.name == "setCompileSdk" && it.parameterTypes.singleOrNull() == Integer::class.java &&
+                runCatching { it.invoke(a, 36) }.isSuccess
+        }
+        println("[compileSdk-override] ${project.name}: " + if (applied) "36" else "GAGAL")
     }
 }
